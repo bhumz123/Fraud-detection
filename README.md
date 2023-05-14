@@ -1,5 +1,7 @@
 # Fraud-detection
 
+The problem is developing and maintaining machine learning-based fraud detection models that effectively identify evolving fraud patterns even in imbalanced data. The goal is to detect and prevent fraudulent activities in real-time minimizing the risk of financial losses for individuals and organizations.
+
 
 ## Data Preprocessing:
 1. Start by loading the dataset into memory.
