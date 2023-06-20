@@ -14,8 +14,7 @@ Credit card fraud detection is a critical task in maintaining the security and i
 8. [Combine LSTM predictions with original features](#combine-lstm-predictions-with-original-features)
 9. [Train the ARF model](#train-the-arf-model)
 10. [Generating LSTM predictions for new Data](#generating-lstm-predictions-for-new-data)
-11. [Combine LSTM predictions with original features for new data](#combine-lstm-predictions-with-original-features-for-new-data)
-12. [Make predictions using ensemble](#make-predictions-using-ensemble)
+11. [Make predictions using ensemble](#make-predictions-using-ensemble)
 
 
 ## Exploratory Data Analysis
@@ -71,14 +70,10 @@ Particle Swarm Optimization (PSO): PSO is a metaheuristic optimization algorithm
 2. Prepare the new data by formatting it into appropriate input sequences.
 3. Generate predictions for the new data using the trained LSTM model.
 
-## Combine LSTM predictions with original features for new data:
-1. Retrieve the original features from the new data.
-2. Concatenate the LSTM predictions with the original features for the new data.
-3. Perform any necessary post-processing on the combined data.
 
-## Make predictions using ensemble:
-1. Combine the LSTM predictions with the original features for both the testing data and the new data.
-2. Feed the combined data into the trained ARF model.
+## Make predictions using Weighted Voting:
+1. LSTM was given weightage of 0.6 and ARF was given 0.4
+2. Use weighted voting as an ensemble method
 3. Generate final predictions using the ensemble of LSTM and ARF models.
 4. Evaluate the performance of the ensemble predictions using appropriate metrics.
 
