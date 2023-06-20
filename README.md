@@ -2,6 +2,22 @@
 Credit card fraud detection is a critical task in maintaining the security and integrity of financial transactions. This repository provides an overview of a comprehensive credit card fraud detection system that incorporates various techniques and models to detect fraudulent activities.
 
 
+# Index
+
+1. [Credit Card Fraud Detection](#credit-card-fraud-detection)
+2. [Data Preprocessing](#data-preprocessing)
+3. [Over Sampling](#over-sampling)
+4. [Feature Selection](#feature-selection)
+5. [Train the LSTM model](#train-the-lstm-model)
+6. [Generate LSTM predictions](#generate-lstm-predictions)
+7. [Combine LSTM predictions with original features](#combine-lstm-predictions-with-original-features)
+8. [Train the ARF model](#train-the-arf-model)
+9. [Generating LSTM predictions for new Data](#generating-lstm-predictions-for-new-data)
+10. [Combine LSTM predictions with original features for new data](#combine-lstm-predictions-with-original-features-for-new-data)
+11. [Make predictions using ensemble](#make-predictions-using-ensemble)
+
+
+
 ## Data Preprocessing:
 Pre-processing is an essential step in credit card fraud detection to gain a better understanding of the data and uncover patterns, anomalies, or trends that may indicate fraudulent activities. Sensitive information like credit card numbers, merchant details, and coordinates are encrypted using encryption techniques to ensure data security and privacy. Two techniques used for encryption are:
 
