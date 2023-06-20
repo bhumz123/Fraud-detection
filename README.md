@@ -1,14 +1,26 @@
-# Fraud-detection
-
-The problem is developing and maintaining machine learning-based fraud detection models that effectively identify evolving fraud patterns even in imbalanced data. The goal is to detect and prevent fraudulent activities in real-time minimizing the risk of financial losses for individuals and organizations.
+## Credit Card Fraud Detection
+Credit card fraud detection is a critical task in maintaining the security and integrity of financial transactions. This repository provides an overview of a comprehensive credit card fraud detection system that incorporates various techniques and models to detect fraudulent activities.
 
 
 ## Data Preprocessing:
-1. Start by loading the dataset into memory.
-2. Explore and analyze the dataset to gain insights.
-3. Handle missing values, outliers, and any data inconsistencies.
-4. Perform feature scaling or normalization if required.
-5. Split the dataset into training and testing sets.
+Pre-processing is an essential step in credit card fraud detection to gain a better understanding of the data and uncover patterns, anomalies, or trends that may indicate fraudulent activities. Sensitive information like credit card numbers, merchant details, and coordinates are encrypted using encryption techniques to ensure data security and privacy. Two techniques used for encryption are:
+
+FF3: FF3 is a format-preserving encryption scheme that encrypts credit card numbers while preserving their original format and length. It ensures that the encrypted output maintains the same format as the original credit card number, allowing for reversible encryption without compromising data integrity.
+
+GeoHashing: GeoHashing is used to encode and index geographical coordinates, such as latitude and longitude, into a string format. This technique enables efficient indexing and searching of geographical data based on proximity.
+
+RFM: RFM (Recency, Frequency, Monetary) is performed to derive meaningful features from the transaction data. RFM metrics capture the recency of transactions, the frequency of transactions, and the monetary value of transactions, along with the risk and credit score of merchants and categories.We have used this to gain a better understanding of customer behaviour and identify segments with different characteristics. It provides insights into customer value and engagement by analysing three key dimensions: recency, frequency, and monetary value.
+
+## Over Sampling
+Credit card fraud detection involves dealing with imbalanced datasets where fraudulent transactions are significantly less common than legitimate transactions. To address this class imbalance issue, the Adaptive Synthetic Sampling (ADASYN) technique is used. ADASYN generates synthetic instances of the minority class (fraudulent transactions) based on their feature distributions. This approach helps in creating a more representative dataset for training the model and improves the performance in detecting credit card fraud instances.
+
+## Feature Selection
+
+Weighted feature selection techniques are implemented to determine the importance or relevance of features in the dataset. Two feature selection techniques used in this system are:
+
+Genetic Algorithm (GA): Genetic algorithms are well-suited for feature selection in credit card fraud detection. They automatically search through a large feature space and identify the most informative subset of features for fraud detection. GA can capture feature interactions, handle multicollinearity, and optimize model hyperparameters.
+
+Particle Swarm Optimization (PSO): PSO is a metaheuristic optimization algorithm that iteratively searches the solution space to find the optimal feature subset. PSO is efficient, parallelizable, and capable of balancing accuracy and complexity in feature selection.
 
 ## Train the LSTM model:
 1. Set up the LSTM architecture, including the number of layers, hidden units, and activation functions.
