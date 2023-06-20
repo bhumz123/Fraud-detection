@@ -5,19 +5,21 @@ Credit card fraud detection is a critical task in maintaining the security and i
 # Index
 
 1. [Credit Card Fraud Detection](#credit-card-fraud-detection)
-2. [Data Preprocessing](#data-preprocessing)
-3. [Over Sampling](#over-sampling)
-4. [Feature Selection](#feature-selection)
-5. [Train the LSTM model](#train-the-lstm-model)
-6. [Generate LSTM predictions](#generate-lstm-predictions)
-7. [Combine LSTM predictions with original features](#combine-lstm-predictions-with-original-features)
-8. [Train the ARF model](#train-the-arf-model)
-9. [Generating LSTM predictions for new Data](#generating-lstm-predictions-for-new-data)
-10. [Combine LSTM predictions with original features for new data](#combine-lstm-predictions-with-original-features-for-new-data)
-11. [Make predictions using ensemble](#make-predictions-using-ensemble)
+2. [Exploratoy Data Analysis](#exploratory-data-analysis)
+3. [Data Preprocessing](#data-preprocessing)
+4. [Over Sampling](#over-sampling)
+5. [Feature Selection](#feature-selection)
+6. [Train the LSTM model](#train-the-lstm-model)
+7. [Generate LSTM predictions](#generate-lstm-predictions)
+8. [Combine LSTM predictions with original features](#combine-lstm-predictions-with-original-features)
+9. [Train the ARF model](#train-the-arf-model)
+10. [Generating LSTM predictions for new Data](#generating-lstm-predictions-for-new-data)
+11. [Combine LSTM predictions with original features for new data](#combine-lstm-predictions-with-original-features-for-new-data)
+12. [Make predictions using ensemble](#make-predictions-using-ensemble)
 
 
-
+## Exploratory Data Analysis
+Exploratory Data Analysis (EDA) is a crucial step to have the understanding and gaining insights from credit card fraud datasets. By examining and visualizing the data, we have uncovered patterns, identified anomalies, and  have better understand the characteristics of fraudulent transactions. 
 ## Data Preprocessing:
 Pre-processing is an essential step in credit card fraud detection to gain a better understanding of the data and uncover patterns, anomalies, or trends that may indicate fraudulent activities. Sensitive information like credit card numbers, merchant details, and coordinates are encrypted using encryption techniques to ensure data security and privacy. Two techniques used for encryption are:
 
